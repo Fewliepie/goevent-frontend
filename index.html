@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img id="logo_header" src="goevent_l.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Região
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Norte</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Nordeste</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Centro-Oeste</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sudeste</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sul</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item me-3">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item me-3">
+                      <a href="/auth/login" type="button" class="btn btn-outline-dark">Login</a>
+                      <a href="/auth/cadastro" type="button" class="btn btn-dark">Cadastre-se</a>
+                    </li>
+                  </ul>
+                  <div class="dropdown">
+                    <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="/auth/password/new">Editar Senha</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <form method="post" th:action="@{/logout}">
+                                <button class="dropdown-item" type="submit">Logout</button>
+                            </form>
+                        </li>
+                    </ul>              
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item w-100 text-center active">
+            <img src="assets/imgs/Rapper-The-Weeknd-Poster.png" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/cbjr.jpg" class="d-inline-block w-20 " alt="...">
+            <img src="assets/imgs/foofighters.jpeg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/metallica.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/arcticmonkeys.jpeg" class="d-inline-block w-20" alt="...">
+          </div>
+          <div class="carousel-item  w-100 text-center">
+            <img src="assets/imgs/cbjr.jpg" class="d-inline-block w-20 " alt="...">
+            <img src="assets/imgs/foofighters.jpeg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/metallica.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/arcticmonkeys.jpeg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/cazuza.jpg" class="d-inline-block w-20" alt="...">
+          </div>
+          <div class="carousel-item  w-100 text-center">
+            <img src="assets/imgs/foofighters.jpeg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/metallica.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/arcticmonkeys.jpeg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/cazuza.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/legiao.jpg" class="d-inline-block w-20" alt="...">
+          </div>
+          <div class="carousel-item  w-100 text-center">
+            <img src="assets/imgs/metallica.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/arcticmonkeys.jpeg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/cazuza.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/legiao.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/Rapper-The-Weeknd-Poster.png" class="d-inline-block w-20" alt="...">
+          </div>
+          <div class="carousel-item  w-100 text-center">
+              <img src="assets/imgs/arcticmonkeys.jpeg" class="d-inline-block w-20" alt="...">
+              <img src="assets/imgs/cazuza.jpg" class="d-inline-block w-20" alt="...">
+              <img src="assets/imgs/legiao.jpg" class="d-inline-block w-20" alt="...">
+              <img src="assets/imgs/Rapper-The-Weeknd-Poster.png" class="d-inline-block w-20" alt="...">
+              <img src="assets/imgs/cbjr.jpg" class="d-inline-block w-20 " alt="...">
+          </div>
+          <div class="carousel-item  w-100 text-center">
+            <img src="assets/imgs/cazuza.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/legiao.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/Rapper-The-Weeknd-Poster.png" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/cbjr.jpg" class="d-inline-block w-20 " alt="...">
+            <img src="assets/imgs/foofighters.jpeg" class="d-inline-block w-20" alt="...">
+          </div>
+          <div class="carousel-item  w-100 text-center">
+            <img src="assets/imgs/legiao.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/Rapper-The-Weeknd-Poster.png" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/cbjr.jpg" class="d-inline-block w-20 " alt="...">
+            <img src="assets/imgs/foofighters.jpeg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/metallica.jpg" class="d-inline-block w-20" alt="...">
+          </div>
+          <div class="carousel-item  w-100 text-center">
+            <img src="assets/imgs/Rapper-The-Weeknd-Poster.png" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/cbjr.jpg" class="d-inline-block w-20 " alt="...">
+            <img src="assets/imgs/foofighters.jpeg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/metallica.jpg" class="d-inline-block w-20" alt="...">
+            <img src="assets/imgs/arcticmonkeys.jpeg" class="d-inline-block w-20" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev btn btn-dark" type="button" data-bs-target="#meuCarrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next btn btn-dark" type="button" data-bs-target="#meuCarrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div id="categorias-home" class="w-100 text-center">
+    <a href="/#" type="button" class="btn btn-warning btn-categoria">Sertanejo</a>
+    <a href="/#" type="button" class="btn btn-warning btn-categoria">Mpb</a>
+    <a href="/#" type="button" class="btn btn-warning btn-categoria">Rock</a>
+    <a href="/#" type="button" class="btn btn-warning btn-categoria">Samba</a>
+    <a href="/#" type="button" class="btn btn-warning btn-categoria">Internacional</a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+    </body>
+</html>
