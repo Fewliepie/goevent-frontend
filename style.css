@@ -1,0 +1,63 @@
+#logo_header{
+    width: 200px;
+}
+
+#meuCarrossel{
+
+}
+#meuCarrossel .carousel-control-prev{
+    color: black;
+    justify-content: left;
+    padding-left: 30px;
+    width: 180px;
+}
+#meuCarrossel .carousel-control-next{
+    color: black;
+    justify-content: right;
+    padding-right: 1.2rem;
+    width: 11rem;
+}
+
+.navbar{
+    padding: 15px 4%;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: hsl(54, 100%, 61%);
+    position: sticky;
+    top: 0;
+}
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    text-align: end;
+}
+
+.navbar-toggler{
+border: 0px;
+}
+
+.carousel-item img{
+    height: 430px;
+    width: 300px;
+    margin: 5px;
+}
+
+.carousel-inner{
+    background-color: rgba(128, 128, 128, 0.082);
+    margin-top: 30px;
+}
+
+.btn-categoria{
+    width: 16%;
+    background-color: hsl(54, 100%, 61%);
+    border-color: hsl(54, 100%, 61%);
+    margin-top: 30px;
+}
+
+@media (max-width: 575px) {
+    .navbar{
+        padding: 5px 0px;
+    }
+}
